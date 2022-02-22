@@ -1,4 +1,4 @@
-# Copy Path for Visual Studio Code
+# Copy Directory Path for Visual Studio Code
 
 - Copy the relative path from the current file to the selected file.
 - Copy the project path of a file or directory.
