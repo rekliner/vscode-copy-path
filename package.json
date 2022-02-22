@@ -1,13 +1,13 @@
 {
     "name": "copy-path",
-    "displayName": "Copy Path",
-    "description": "Copy the relative path from the current file to the selected file",
+    "displayName": "Copy Directory Path",
+    "description": "Copy the relative path from the current file to the selected file's directory",
     "version": "0.1.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/andaviaco/vscode-copy-path"
+        "url": "https://github.com/rekliner/vscode-copy-path"
     },
-    "publisher": "andaviaco",
+    "publisher": "rekliner",
     "engines": {
         "vscode": "^1.23.0"
     },
@@ -23,11 +23,11 @@
         "commands": [
             {
                 "command": "extension.copyProjectPath",
-                "title": "Copy Project Path"
+                "title": "Copy Project Directory"
             },
             {
                 "command": "extension.copyRelativePath",
-                "title": "Copy Relative Path"
+                "title": "Copy Relative Directory"
             }
         ],
         "menus": {
