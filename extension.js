@@ -5,7 +5,7 @@ const ncp = require("copy-paste");
 function copyProjectPath(selected) {
     let path = vscode.workspace.asRelativePath(selected.path);
 
-    path = path.replace(/\\/g, '/');
+    path = path.replace(/\\/g, '/').replace(/[^\/]+$/, '');
 
     ncp.copy(path);
 }
@@ -24,7 +24,7 @@ function copyRelativePath(selected) {
 
     current = editor.document.uri;
     relativePath = path.relative(path.dirname(current.path), selected.path);
-    relativePath = relativePath.replace(/\\/g, '/');
+    relativePath = relativePath.replace(/\\/g, '/').replace(/[^\/]+$/, '');
 
     if (config.addLeadingDot && !relativePath.startsWith('..')) {
         relativePath = `./${relativePath}`;
